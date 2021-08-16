@@ -1,0 +1,74 @@
+{
+  "name": "rxjs-repo",
+  "version": "0.0.1",
+  "description": "",
+  "files": [
+    "src",
+    "build",
+    "docs"
+  ],
+  "main": "./build/index.min.js",
+  "scripts": {
+    "doc": "typedoc",
+    "build": "NODE_ENV=production  webpack  --progress --color",
+    "server": "NODE_ENV=development hot=true  ./node_modules/.bin/nodemon .",
+    "s": "rm -rf build && npm run server",
+    "log": "git log --pretty=format:\"%an, %ar : %s\""
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.4",
+    "@babel/polyfill": "^7.7.0",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/register": "^7.7.0",
+    "@ks/gateway": "^2.0.7",
+    "autoprefixer": "^9.8.0",
+    "axios": "^0.19.0",
+    "babel-loader": "^8.0.6",
+    "config": "^3.2.4",
+    "conventional-changelog": "^3.1.14",
+    "css-loader": "^3.5.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "happypack": "^5.0.1",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "koa": "^2.11.0",
+    "koa-convert": "^1.2.0",
+    "koa-static-regexp": "^1.0.4",
+    "koa-webpack-hot-middleware": "^1.0.3",
+    "long": "^4.0.0",
+    "lottie-web": "^5.6.0",
+    "node-sass": "^4.14.1",
+    "nodemon": "^1.19.4",
+    "pako": "^1.0.10",
+    "postcss-color-hex-alpha": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "protobufjs": "^6.8.8",
+    "qs": "^6.9.1",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "ts-loader": "^6.2.1",
+    "typedoc": "^0.17.7",
+    "typescript": "^3.7.2",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-middleware": "^3.7.2"
+  },
+  "engines": {
+    "node": ">=10.5.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "ie 11"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {}
+}
